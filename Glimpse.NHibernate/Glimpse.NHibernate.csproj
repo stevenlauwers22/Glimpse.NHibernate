@@ -45,8 +45,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Initialize.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh332.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh333.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3324000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3334000.cs" />
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapper\GlimpseDbDriverActivator.cs" />
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapper\GlimpseDbDriverFactory.cs" />
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapper\NHibernateDriverInfo.cs" />
@@ -54,15 +54,15 @@
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapperExecutionTask.cs" />
     <Compile Include="Inspector\Core\NHibernateExecutionBlock.cs" />
     <Compile Include="Inspector\NHibernateInspector.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh121.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh201.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh210.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh212.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh300.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh310.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh320.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh330.cs" />
-    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh331.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh1214000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh2014000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh2104000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh2124000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3004000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3104000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3204000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3304000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3314000.cs" />
     <Compile Include="AlternateType\IGlimpseDbDriver.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
