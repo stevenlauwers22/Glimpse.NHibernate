@@ -11,7 +11,7 @@ using NHibernate.SqlTypes;
 
 namespace Glimpse.NHibernate.AlternateType
 {
-    public class GlimpseDbDriverNh3334000 
+    public class GlimpseDbDriverNh3334001 
         : IGlimpseDbDriver, IDriver, IEmbeddedBatcherFactoryProvider, ISqlParameterFormatter
     {
         private IDriver _innerDriver;

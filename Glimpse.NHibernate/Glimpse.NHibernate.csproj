@@ -44,6 +44,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3334001.cs" />
     <Compile Include="Initialize.cs" />
     <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3324000.cs" />
     <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3334000.cs" />

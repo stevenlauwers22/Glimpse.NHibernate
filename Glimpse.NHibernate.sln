@@ -25,6 +25,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3314000", "Glimpse.NHibernate.Test.NH3314000\Glimpse.NHibernate.Test.Nh3314000.csproj", "{82F369EA-93B1-43C4-815A-3DE4E62AC356}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3324000", "Glimpse.NHibernate.Test.NH3324000\Glimpse.NHibernate.Test.Nh3324000.csproj", "{083DF215-F290-4062-A3A7-F2C91F4F19C5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3334000", "Glimpse.NHibernate.Test.NH3334000\Glimpse.NHibernate.Test.Nh3334000.csproj", "{0D26CC16-7FBB-480A-9010-FB19BB3D5192}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3334001", "Glimpse.NHibernate.Test.NH3334001\Glimpse.NHibernate.Test.Nh3334001.csproj", "{827A074C-02F6-437F-A117-AFF5177602A3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +81,18 @@ Global
 		{82F369EA-93B1-43C4-815A-3DE4E62AC356}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{82F369EA-93B1-43C4-815A-3DE4E62AC356}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{82F369EA-93B1-43C4-815A-3DE4E62AC356}.Release|Any CPU.Build.0 = Release|Any CPU
+		{083DF215-F290-4062-A3A7-F2C91F4F19C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{083DF215-F290-4062-A3A7-F2C91F4F19C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{083DF215-F290-4062-A3A7-F2C91F4F19C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{083DF215-F290-4062-A3A7-F2C91F4F19C5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0D26CC16-7FBB-480A-9010-FB19BB3D5192}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0D26CC16-7FBB-480A-9010-FB19BB3D5192}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0D26CC16-7FBB-480A-9010-FB19BB3D5192}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0D26CC16-7FBB-480A-9010-FB19BB3D5192}.Release|Any CPU.Build.0 = Release|Any CPU
+		{827A074C-02F6-437F-A117-AFF5177602A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{827A074C-02F6-437F-A117-AFF5177602A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{827A074C-02F6-437F-A117-AFF5177602A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{827A074C-02F6-437F-A117-AFF5177602A3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
