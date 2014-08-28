@@ -1,52 +1,56 @@
-/Glimpse.NHibernate/obj
-/Glimpse.NHibernate/bin
-/Glimpse.NHibernate/Glimpse.NHibernate.csproj.user
+/Source/Glimpse.NHibernate/obj
+/Source/Glimpse.NHibernate/bin
+/Source/Glimpse.NHibernate/Glimpse.NHibernate.csproj.user
 
-/Glimpse.NHibernate.Test/obj
-/Glimpse.NHibernate.Test/bin
+/Source/Glimpse.NHibernate.Sample/obj
+/Source/Glimpse.NHibernate.Sample/bin
+/Source/Glimpse.NHibernate.Sample/Glimpse.NHibernate.Sample.csproj.user
 
-/Glimpse.NHibernate.Test.NH1214000/obj
-/Glimpse.NHibernate.Test.NH1214000/bin
+/Source/Glimpse.NHibernate.Test/obj
+/Source/Glimpse.NHibernate.Test/bin
 
-/Glimpse.NHibernate.Test.NH2014000/bin
-/Glimpse.NHibernate.Test.NH2014000/obj
+/Source/Glimpse.NHibernate.Test.NH1214000/obj
+/Source/Glimpse.NHibernate.Test.NH1214000/bin
 
-/Glimpse.NHibernate.Test.NH2104000/bin
-/Glimpse.NHibernate.Test.NH2104000/obj
+/Source/Glimpse.NHibernate.Test.NH2014000/bin
+/Source/Glimpse.NHibernate.Test.NH2014000/obj
 
-/Glimpse.NHibernate.Test.NH2124000/bin
-/Glimpse.NHibernate.Test.NH2124000/obj
+/Source/Glimpse.NHibernate.Test.NH2104000/bin
+/Source/Glimpse.NHibernate.Test.NH2104000/obj
 
-/Glimpse.NHibernate.Test.NH3004000/bin
-/Glimpse.NHibernate.Test.NH3004000/obj
+/Source/Glimpse.NHibernate.Test.NH2124000/bin
+/Source/Glimpse.NHibernate.Test.NH2124000/obj
 
-/Glimpse.NHibernate.Test.NH3104000/bin
-/Glimpse.NHibernate.Test.NH3104000/obj
+/Source/Glimpse.NHibernate.Test.NH3004000/bin
+/Source/Glimpse.NHibernate.Test.NH3004000/obj
 
-/Glimpse.NHibernate.Test.NH3204000/bin
-/Glimpse.NHibernate.Test.NH3204000/obj
+/Source/Glimpse.NHibernate.Test.NH3104000/bin
+/Source/Glimpse.NHibernate.Test.NH3104000/obj
 
-/Glimpse.NHibernate.Test.NH3304000/bin
-/Glimpse.NHibernate.Test.NH3304000/obj
+/Source/Glimpse.NHibernate.Test.NH3204000/bin
+/Source/Glimpse.NHibernate.Test.NH3204000/obj
 
-/Glimpse.NHibernate.Test.NH3314000/bin
-/Glimpse.NHibernate.Test.NH3314000/obj
+/Source/Glimpse.NHibernate.Test.NH3304000/bin
+/Source/Glimpse.NHibernate.Test.NH3304000/obj
 
-/Glimpse.NHibernate.Test.NH3324000/bin
-/Glimpse.NHibernate.Test.NH3324000/obj
+/Source/Glimpse.NHibernate.Test.NH3314000/bin
+/Source/Glimpse.NHibernate.Test.NH3314000/obj
 
-/Glimpse.NHibernate.Test.NH3334000/bin
-/Glimpse.NHibernate.Test.NH3334000/obj
+/Source/Glimpse.NHibernate.Test.NH3324000/bin
+/Source/Glimpse.NHibernate.Test.NH3324000/obj
 
-/Glimpse.NHibernate.Test.NH3334001/bin
-/Glimpse.NHibernate.Test.NH3334001/obj
+/Source/Glimpse.NHibernate.Test.NH3334000/bin
+/Source/Glimpse.NHibernate.Test.NH3334000/obj
 
-/Glimpse.NHibernate.Test.NH3404000/bin
-/Glimpse.NHibernate.Test.NH3404000/obj
+/Source/Glimpse.NHibernate.Test.NH3334001/bin
+/Source/Glimpse.NHibernate.Test.NH3334001/obj
 
-/Glimpse.NHibernate.Test.NH4004000/bin
-/Glimpse.NHibernate.Test.NH4004000/obj
+/Source/Glimpse.NHibernate.Test.NH3404000/bin
+/Source/Glimpse.NHibernate.Test.NH3404000/obj
 
-/Glimpse.NHibernate.sln.DotSettings.user
-/Glimpse.NHibernate.v11.suo
-/Glimpse.NHibernate.v12.suo
+/Source/Glimpse.NHibernate.Test.NH4004000/bin
+/Source/Glimpse.NHibernate.Test.NH4004000/obj
+
+/Source/Glimpse.NHibernate.sln.DotSettings.user
+/Source/Glimpse.NHibernate.v11.suo
+/Source/Glimpse.NHibernate.v12.suo

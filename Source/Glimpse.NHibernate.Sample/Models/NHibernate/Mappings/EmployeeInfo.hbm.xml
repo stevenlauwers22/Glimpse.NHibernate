@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<hibernate-mapping xmlns="urn:nhibernate-mapping-2.2" assembly="Glimpse.NHibernate.Sample" namespace="Glimpse.NHibernate.Sample.Models" auto-import="true">
+  <class name="EmployeeInfo">
+    <id name="EmpNo" access="property" column="EmpNo" type="Int32">
+      <generator class="native"></generator>
+    </id>
+
+    <property name="EmpName" access="property" column="EmpName" type="String"></property>
+    <property name="Salary" access="property" column="Salary" type="Int32"></property>
+    <property name="DeptName" access="property" column="DeptName" type="String"></property>
+    <property name="Designation" access="property" column="Designation" type="String"></property>
+  </class>
+</hibernate-mapping>
