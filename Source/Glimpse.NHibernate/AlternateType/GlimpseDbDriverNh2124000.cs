@@ -79,7 +79,8 @@ namespace Glimpse.NHibernate.AlternateType
             get
             {
                 var innerBatcherFactoryProvider = _innerDriver as IEmbeddedBatcherFactoryProvider;
-                return innerBatcherFactoryProvider != null ? innerBatcherFactoryProvider.BatcherFactoryClass : null;
+                var innerBatchedFactoryClass = innerBatcherFactoryProvider != null ? innerBatcherFactoryProvider.BatcherFactoryClass : null;
+                return innerBatchedFactoryClass;
             }
         }
 

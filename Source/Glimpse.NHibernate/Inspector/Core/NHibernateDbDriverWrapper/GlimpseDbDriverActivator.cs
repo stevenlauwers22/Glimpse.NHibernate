@@ -8,7 +8,7 @@ namespace Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper
         IGlimpseDbDriver CreateDbDriver(Type dbDriverType);
     }
 
-    public class GlimpseDbDriverActivator 
+    public class GlimpseDbDriverActivator
         : IGlimpseDbDriverActivator
     {
         public IGlimpseDbDriver CreateDbDriver(Type dbDriverType)

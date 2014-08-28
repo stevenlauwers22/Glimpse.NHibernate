@@ -1,5 +1,7 @@
-﻿using System.Web;
+﻿using System.Collections.Generic;
+using System.Web;
 using NHibernate;
+using NHibernate.AdoNet;
 using NHibernate.Cfg;
 
 namespace Glimpse.NHibernate.Sample.Models.NHibernate
@@ -10,9 +12,15 @@ namespace Glimpse.NHibernate.Sample.Models.NHibernate
 
         public static void Initialize()
         {
-            var cgf = new Configuration();
-            var data = cgf.Configure(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Configuration\hibernate.cfg.xml"));
-            cgf.AddDirectory(new System.IO.DirectoryInfo(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Mappings")));
+            var configuration = new Configuration();
+            var data = configuration
+                .Configure(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Configuration\hibernate.cfg.xml"))
+                .AddDirectory(new System.IO.DirectoryInfo(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Mappings")))
+                //.AddProperties(new Dictionary<string, string>
+                //{
+                //    {Environment.BatchStrategy, typeof(NonBatchingBatcherFactory).FullName}
+                //})
+                ;
             
             _sessionFactory = data.BuildSessionFactory();
         }
