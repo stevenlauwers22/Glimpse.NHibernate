@@ -27,8 +27,8 @@ namespace Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper
                 return null;
 
             // Determine the appropriate glimpse driver version
-            var version = FileVersionInfo.GetVersionInfo(nhibernateAssembly.Location);
-            var versionNumber = string.Format("{0}{1}{2}{3}", version.FileMajorPart, version.FileMinorPart, version.FileBuildPart, version.FilePrivatePart);
+            var version = nhibernateAssembly.GetName().Version;
+            var versionNumber = string.Format("{0}{1}{2}{3}", version.Major, version.Minor, version.Build, version.Revision);
             var driver = string.Format("Glimpse.NHibernate.AlternateType.GlimpseDbDriverNh{0}", versionNumber);
 
             // Get the glimpse driver code

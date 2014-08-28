@@ -23,9 +23,11 @@ namespace Glimpse.NHibernate.Test
             Assert.IsNotNull(result);
             Assert.IsTrue(result.GetInterfaces().ToList().Contains(typeof(IGlimpseDbDriver)));
 
-            var versionNumber = GetType().Name.Replace("When_the_GlimpseDbDriverFactory_is_told_to_GetDbDriverType_for_NH", "");
+            var versionNumber = GetExpectedVersionNumber();
             var driver = string.Format("Glimpse.NHibernate.AlternateType.GlimpseDbDriverNh{0}", versionNumber);
             Assert.AreEqual(driver, result.FullName);
         }
+
+        protected abstract string GetExpectedVersionNumber();
     }
 }
