@@ -12,17 +12,16 @@ namespace Glimpse.NHibernate.Sample.Models.NHibernate
 
         public static void Initialize()
         {
-            var configuration = new Configuration();
-            var data = configuration
+            var configuration = new Configuration()
                 .Configure(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Configuration\hibernate.cfg.xml"))
                 .AddDirectory(new System.IO.DirectoryInfo(HttpContext.Current.Server.MapPath(@"\Models\NHibernate\Mappings")))
-                //.AddProperties(new Dictionary<string, string>
-                //{
-                //    {Environment.BatchStrategy, typeof(NonBatchingBatcherFactory).FullName}
-                //})
+                .AddProperties(new Dictionary<string, string>
+                {
+                    {Environment.BatchStrategy, typeof(NonBatchingBatcherFactory).FullName}
+                })
                 ;
             
-            _sessionFactory = data.BuildSessionFactory();
+            _sessionFactory = configuration.BuildSessionFactory();
         }
 
         public static ISession OpenSession()
