@@ -43,25 +43,25 @@ The SQL tab remains disabled as long as there's nothing to show. This means that
 **Unable to cast object of type 'Glimpse.Ado.AlternateType.GlimpseDbCommand' to type 'System.Data.SqlClient.SqlCommand'**
 
 ```
-       at NHibernate.AdoNet.SqlClientBatchingBatcher.AddToBatch(IExpectation expectation)  
-       at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)  
-       at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)  
-       at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)  
-       at NHibernate.Action.EntityUpdateAction.Execute()  
-       at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)  
-       at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)  
-       at NHibernate.Engine.ActionQueue.ExecuteActions()  
-       at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)  
-       at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)  
-       at NHibernate.Impl.SessionImpl.Flush()
+   at NHibernate.AdoNet.SqlClientBatchingBatcher.AddToBatch(IExpectation expectation)  
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)  
+   at NHibernate.Persister.Entity.AbstractEntityPersister.UpdateOrInsert(Object id, Object[] fields, Object[] oldFields, Object rowId, Boolean[] includeProperty, Int32 j, Object oldVersion, Object obj, SqlCommandInfo sql, ISessionImplementor session)  
+   at NHibernate.Persister.Entity.AbstractEntityPersister.Update(Object id, Object[] fields, Int32[] dirtyFields, Boolean hasDirtyCollection, Object[] oldFields, Object oldVersion, Object obj, Object rowId, ISessionImplementor session)  
+   at NHibernate.Action.EntityUpdateAction.Execute()  
+   at NHibernate.Engine.ActionQueue.Execute(IExecutable executable)  
+   at NHibernate.Engine.ActionQueue.ExecuteActions(IList list)  
+   at NHibernate.Engine.ActionQueue.ExecuteActions()  
+   at NHibernate.Event.Default.AbstractFlushingEventListener.PerformExecutions(IEventSource session)  
+   at NHibernate.Event.Default.DefaultFlushEventListener.OnFlush(FlushEvent event)  
+   at NHibernate.Impl.SessionImpl.Flush()
 ```
 
 Most of the time this happend when you're executing and insert/update/delete statement against a SQL Server database. The exception occurs in the SqlClientBatchingBatcher which tries to cast the GlimpseDbCommand to a SqlCommand. At the moment the only way to solve this is to disable batching of SQL commands (you should only do this for debugging purposes).
 
 ```
-	var configuration = new Configuration()  
-        .AddProperties(new Dictionary<string, string>  
-	    {  
-		    {Environment.BatchStrategy, typeof(NonBatchingBatcherFactory).FullName}  
-	    };
+var configuration = new Configuration()  
+    .AddProperties(new Dictionary<string, string>  
+	{  
+	    { Environment.BatchStrategy, typeof(NonBatchingBatcherFactory).FullName }  
+    };
 ```
