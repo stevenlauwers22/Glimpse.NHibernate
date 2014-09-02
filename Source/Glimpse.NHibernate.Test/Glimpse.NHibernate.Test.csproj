@@ -46,13 +46,13 @@
     <Compile Include="When_the_NHibernateDbDriverWrapperExecutionTask_is_told_to_Execute.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Reference Include="Glimpse.Ado, Version=1.7.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glimpse.Ado, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glimpse.Ado.1.7.0\lib\net40\Glimpse.Ado.dll</HintPath>
+      <HintPath>..\packages\Glimpse.Ado.1.7.3\lib\net40\Glimpse.Ado.dll</HintPath>
     </Reference>
-    <Reference Include="Glimpse.Core, Version=1.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+    <Reference Include="Glimpse.Core, Version=1.8.6.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\packages\Glimpse.1.8.0\lib\net40\Glimpse.Core.dll</HintPath>
+      <HintPath>..\packages\Glimpse.1.8.6\lib\net40\Glimpse.Core.dll</HintPath>
     </Reference>
     <Reference Include="Moq, Version=4.2.1312.1622, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
