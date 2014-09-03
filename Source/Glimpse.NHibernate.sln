@@ -37,6 +37,21 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh4
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Sample", "Glimpse.NHibernate.Sample\Glimpse.NHibernate.Sample.csproj", "{342629CD-9FC4-4EE8-963A-406C7D035069}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{767FA509-C143-4545-AFBE-064F2CDF9979}"
+	ProjectSection(SolutionItems) = preProject
+		.build\build.csx = .build\build.csx
+		.build\buildCI.bat = .build\buildCI.bat
+		.build\buildDeploy.bat = .build\buildDeploy.bat
+		.build\packages.config = .build\packages.config
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B402CF7F-C2AB-4F37-960C-5A4D2BD74B5E}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Glimpse.NHibernate.Test.Nh3344000", "Glimpse.NHibernate.Test.NH3344000\Glimpse.NHibernate.Test.Nh3344000.csproj", "{95428E5A-63C0-42A7-B027-65568B94D52D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -111,6 +126,10 @@ Global
 		{342629CD-9FC4-4EE8-963A-406C7D035069}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{342629CD-9FC4-4EE8-963A-406C7D035069}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{342629CD-9FC4-4EE8-963A-406C7D035069}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95428E5A-63C0-42A7-B027-65568B94D52D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95428E5A-63C0-42A7-B027-65568B94D52D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95428E5A-63C0-42A7-B027-65568B94D52D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95428E5A-63C0-42A7-B027-65568B94D52D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
