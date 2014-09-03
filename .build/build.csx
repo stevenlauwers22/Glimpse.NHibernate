@@ -115,7 +115,7 @@ dotNetBuild.AddTarget("createPackage", "Create NuGet package", c
 dotNetBuild.AddTarget("deploy", "Deploy to NuGet", c
 	=> c.DependsOn("publishPackage"));
 
-dotNetBuild.AddTarget("publishCorePackage", "Publish NuGet package", c
+dotNetBuild.AddTarget("publishPackage", "Publish NuGet package", c
 	=> c.Do(context => {
             var solutionDirectory = context.ConfigurationSettings.Get<String>("SolutionDirectory");
             var nugetExe = context.ConfigurationSettings.Get<String>("PathToNuGetExe");
