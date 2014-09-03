@@ -1,14 +1,13 @@
 ﻿using System;
 using Glimpse.NHibernate.AlternateType;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_GlimpseDbDriverActivator_is_told_to_CreateDbDriver_with_no_valid_type
     {
-        [Test]
+        [Fact]
         public void It_should_throw_an_invalid_cast_exception()
         {            
             // Arrange
@@ -19,15 +18,13 @@ namespace Glimpse.NHibernate.Test
             {
                 // Act
                 glimpseDbDriverActivator.CreateDbDriver(dbDriverType);
+                Assert.False(true, "Expected exception as not thrown");
             }
             catch (InvalidCastException exception)
             {
                 // Assert
-                Assert.AreEqual(string.Format("Unable to cast object of type '{0}' to type '{1}'.", dbDriverType.Name, typeof(IGlimpseDbDriver).FullName), exception.Message);
-                Assert.Pass();
+                Assert.Equal(string.Format("Unable to cast object of type '{0}' to type '{1}'.", dbDriverType.Name, typeof(IGlimpseDbDriver).FullName), exception.Message);
             }
-
-            Assert.Fail("Expected exception as not thrown");
         }
 
         public class GlimpseDbDriverDummy

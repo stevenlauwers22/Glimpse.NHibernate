@@ -3,16 +3,15 @@ using Glimpse.Core.Extensibility;
 using Glimpse.NHibernate.Inspector.Core;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
 using Moq;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public abstract class When_the_NHibernateDbDriverWrapperExecutionTask_is_told_to_Execute
     {
         protected abstract void BuildSessionFactory();
 
-        [Test]
+        [Fact]
         public void It_should_wrap_all_drivers()
         {
             var logger = new Mock<ILogger>();
@@ -27,11 +26,11 @@ namespace Glimpse.NHibernate.Test
 
             // Assert
             var nhibernateDriverInfos = nhibernateProvider.GetNHibernateDriverInfos().ToList();
-            Assert.AreEqual(1, nhibernateDriverInfos.Count());
+            Assert.Equal(1, nhibernateDriverInfos.Count());
 
             foreach (var nhibernateDriverInfo in nhibernateDriverInfos)
             {
-                Assert.IsTrue(nhibernateDriverInfo.IsWrapped());
+                Assert.True(nhibernateDriverInfo.IsWrapped());
             }
         }
     }

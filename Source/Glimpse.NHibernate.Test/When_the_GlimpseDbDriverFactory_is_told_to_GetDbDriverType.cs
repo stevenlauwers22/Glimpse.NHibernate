@@ -2,14 +2,13 @@
 using System.Reflection;
 using Glimpse.NHibernate.AlternateType;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public abstract class When_the_GlimpseDbDriverFactory_is_told_to_GetDbDriverType
     {
-        [Test]
+        [Fact]
         public void It_should_return_the_db_driver_type()
         {
             // Arrange
@@ -20,12 +19,12 @@ namespace Glimpse.NHibernate.Test
             var result = glimpseDbDriverFactory.GetDbDriverType(nhibernateAssembly);
 
             // Assert
-            Assert.IsNotNull(result);
-            Assert.IsTrue(result.GetInterfaces().ToList().Contains(typeof(IGlimpseDbDriver)));
+            Assert.NotNull(result);
+            Assert.True(result.GetInterfaces().ToList().Contains(typeof(IGlimpseDbDriver)));
 
             var versionNumber = GetExpectedVersionNumber();
             var driver = string.Format("Glimpse.NHibernate.AlternateType.GlimpseDbDriverNh{0}", versionNumber);
-            Assert.AreEqual(driver, result.FullName);
+            Assert.Equal(driver, result.FullName);
         }
 
         protected abstract string GetExpectedVersionNumber();

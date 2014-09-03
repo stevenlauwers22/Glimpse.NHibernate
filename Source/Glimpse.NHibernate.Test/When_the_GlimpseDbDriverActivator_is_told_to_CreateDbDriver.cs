@@ -1,14 +1,13 @@
 ﻿using System;
 using Glimpse.NHibernate.AlternateType;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_GlimpseDbDriverActivator_is_told_to_CreateDbDriver
     {
-        [Test]
+        [Fact]
         public void It_should_return_the_db_driver()
         {
             // Arrange
@@ -19,8 +18,8 @@ namespace Glimpse.NHibernate.Test
             var result = glimpseDbDriverActivator.CreateDbDriver(dbDriverType);
 
             // Assert
-            Assert.IsNotNull(result);
-            Assert.IsInstanceOf<GlimpseDbDriverDummy>(result);
+            Assert.NotNull(result);
+            Assert.IsAssignableFrom<GlimpseDbDriverDummy>(result);
         }
 
         public class GlimpseDbDriverDummy : IGlimpseDbDriver

@@ -1,13 +1,12 @@
 ﻿using System;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_GlimpseDbDriverActivator_is_told_to_CreateDbDriver_with_no_empty_constructor
     {
-        [Test]
+        [Fact]
         public void It_should_throw_an_invalid_operation_exception()
         {
             // Arrange
@@ -18,15 +17,13 @@ namespace Glimpse.NHibernate.Test
             {
                 // Act
                 glimpseDbDriverActivator.CreateDbDriver(dbDriverType);
+                Assert.False(true, "Expected exception as not thrown");
             }
             catch (InvalidOperationException exception)
             {
                 // Assert
-                Assert.AreEqual(exception.Message, string.Format("{0} should have a parameterless constructor", dbDriverType));
-                Assert.Pass();
+                Assert.Equal(exception.Message, string.Format("{0} should have a parameterless constructor", dbDriverType));
             }
-
-            Assert.Fail("Expected exception as not thrown");
         }
 
         public class GlimpseDbDriverDummy

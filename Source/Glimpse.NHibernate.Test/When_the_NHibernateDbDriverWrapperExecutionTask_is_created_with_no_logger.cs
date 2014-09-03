@@ -2,14 +2,13 @@
 using Glimpse.NHibernate.Inspector.Core;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
 using Moq;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_NHibernateDbDriverWrapperExecutionTask_is_created_with_no_logger
     {
-        [Test]
+        [Fact]
         public void It_should_not_throw_an_exception()
         {
             // Arrange
@@ -22,14 +21,13 @@ namespace Glimpse.NHibernate.Test
             {
                 // Act
                 createAction();
+                Assert.False(true, "Expected exception as not thrown");
             }
             catch (ArgumentNullException exception)
             {
-                Assert.AreEqual(exception.ParamName, "logger");
-                Assert.Pass();
+                // Assert
+                Assert.Equal(exception.ParamName, "logger");
             }
-
-            Assert.Fail("Expected exception as not thrown");
         }
     }
 }

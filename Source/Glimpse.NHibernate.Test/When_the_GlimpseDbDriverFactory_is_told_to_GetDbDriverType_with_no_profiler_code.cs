@@ -2,14 +2,13 @@
 using System.Reflection;
 using System.Reflection.Emit;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_GlimpseDbDriverFactory_is_told_to_GetDbDriverType_with_no_profiler_code
     {
-        [Test]
+        [Fact]
         public void It_should_return_null()
         {
             // Arrange
@@ -20,7 +19,7 @@ namespace Glimpse.NHibernate.Test
             var result = glimpseDbDriverFactory.GetDbDriverType(nhibernateAssembly);
 
             // Assert
-            Assert.IsNull(result);
+            Assert.Null(result);
         }
     }
 }

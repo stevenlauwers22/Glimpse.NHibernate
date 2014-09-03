@@ -1,12 +1,11 @@
 ﻿using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_GlimpseDbDriverFactory_is_told_to_GetDbDriverType_with_no_nhibernate_assembly
     {
-        [Test]
+        [Fact]
         public void It_should_return_null()
         {
             // Arrange
@@ -16,7 +15,7 @@ namespace Glimpse.NHibernate.Test
             var result = glimpseDbDriverFactory.GetDbDriverType(null);
 
             // Assert
-            Assert.IsNull(result);
+            Assert.Null(result);
         }
     }
 }

@@ -3,14 +3,13 @@ using Glimpse.Core.Extensibility;
 using Glimpse.NHibernate.Inspector.Core;
 using Glimpse.NHibernate.Inspector.Core.NHibernateDbDriverWrapper;
 using Moq;
-using NUnit.Framework;
+using Xunit;
 
 namespace Glimpse.NHibernate.Test
 {
-    [TestFixture]
     public class When_the_NHibernateDbDriverWrapperExecutionTask_is_created
     {
-        [Test]
+        [Fact]
         public void It_should_not_throw_an_exception()
         {
             // Arrange
@@ -27,10 +26,9 @@ namespace Glimpse.NHibernate.Test
             }
             catch (Exception exception)
             {
-                Assert.Fail(exception.Message);
+                // Assert
+                Assert.False(true, exception.Message);
             }
-
-            Assert.Pass();
         }
     }
 }
