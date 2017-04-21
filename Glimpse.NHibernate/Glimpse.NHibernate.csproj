@@ -46,6 +46,7 @@
   <ItemGroup>
     <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh3400.cs" />
     <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh4004000.cs" />
+    <EmbeddedResource Include="AlternateType\GlimpseDbDriverNh4104000.cs" />
     <Compile Include="Initialize.cs" />
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapper\GlimpseDbDriverActivator.cs" />
     <Compile Include="Inspector\Core\NHibernateDbDriverWrapper\GlimpseDbDriverFactory.cs" />
