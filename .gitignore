@@ -75,6 +75,9 @@
 /Glimpse.NHibernate.Test.NH4044000/bin
 /Glimpse.NHibernate.Test.NH4044000/obj
 
+/Glimpse.NHibernate.Test.NH4104000/bin
+/Glimpse.NHibernate.Test.NH4104000/obj
+
 /Glimpse.NHibernate.sln.DotSettings.user
 /Glimpse.NHibernate.v11.suo
 /Glimpse.NHibernate.v12.suo
@@ -84,3 +87,6 @@
 /.vs
 *.user
 /packages
+
+/.build/scriptcs_packages
+/.build/scriptcs_packages.config
