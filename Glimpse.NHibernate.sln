@@ -42,7 +42,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".build", ".build", "{767FA5
 		.build\build.csx = .build\build.csx
 		.build\buildCI.bat = .build\buildCI.bat
 		.build\buildDeploy.bat = .build\buildDeploy.bat
-		.build\packages.config = .build\packages.config
+		.build\scriptcs_packages.config = .build\scriptcs_packages.config
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{B402CF7F-C2AB-4F37-960C-5A4D2BD74B5E}"
