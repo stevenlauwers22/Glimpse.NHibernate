@@ -77,8 +77,16 @@ dotNetBuild.AddTarget("runTests", "Run tests", c
                 Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3334000\bin\Release\Glimpse.NHibernate.Test.Nh3334000.dll"),
                 Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3334001\bin\Release\Glimpse.NHibernate.Test.Nh3334001.dll"),
                 Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3344000\bin\Release\Glimpse.NHibernate.Test.Nh3344000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3354000\bin\Release\Glimpse.NHibernate.Test.Nh3354000.dll"),
                 Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3404000\bin\Release\Glimpse.NHibernate.Test.Nh3404000.dll"),
-                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4004000\bin\Release\Glimpse.NHibernate.Test.Nh4004000.dll")
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh3414000\bin\Release\Glimpse.NHibernate.Test.Nh3414000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4004000\bin\Release\Glimpse.NHibernate.Test.Nh4004000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4014000\bin\Release\Glimpse.NHibernate.Test.Nh4014000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4024000\bin\Release\Glimpse.NHibernate.Test.Nh4024000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4034000\bin\Release\Glimpse.NHibernate.Test.Nh4034000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4044000\bin\Release\Glimpse.NHibernate.Test.Nh4044000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4104000\bin\Release\Glimpse.NHibernate.Test.Nh4104000.dll"),
+                Path.Combine(solutionDirectory, @"Glimpse.NHibernate.Test.Nh4114000\bin\Release\Glimpse.NHibernate.Test.Nh4114000.dll"),
             };
             
             foreach (var xunitAssembly in xunitAssemblies)

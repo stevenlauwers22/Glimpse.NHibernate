@@ -24,9 +24,16 @@ If you're interested in Ranzlee's package, you can read all about it [here](http
 Basically all versions of NHibernate you can find on [this page](http://sourceforge.net/projects/nhibernate/files/NHibernate/) are supported, we don't support the alpha or beta versions. Only the ones that end with GA or SPx.
 
 The current list of supported versions is:  
-
+- 4.1.1.GA
+- 4.1.0.GA
+- 4.0.4.GA
+- 4.0.3.GA
+- 4.0.2.GA
+- 4.0.1.GA 
 - 4.0.0.GA
+- 3.4.1.GA
 - 3.4.0.GA
+- 3.3.5.GA
 - 3.3.4.GA
 - 3.3.3.SP1
 - 3.3.3.GA
