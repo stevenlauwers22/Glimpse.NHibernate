@@ -8,8 +8,8 @@
     <ProjectGuid>{5504DF46-B719-4A4B-811F-5EA03CF1A864}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Glimpse.NHibernate.Test.NH3404000</RootNamespace>
-    <AssemblyName>Glimpse.NHibernate.Test.Nh3404000</AssemblyName>
+    <RootNamespace>Glimpse.NHibernate.Test.NH3414000</RootNamespace>
+    <AssemblyName>Glimpse.NHibernate.Test.Nh3414000</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
